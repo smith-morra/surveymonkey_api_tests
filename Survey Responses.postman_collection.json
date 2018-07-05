@@ -1,0 +1,51 @@
+{
+	"info": {
+		"_postman_id": "eba41c03-6c34-44c1-9779-0d1816a1da21",
+		"name": "Survey Responses",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "responses",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "7zF8BOnG4G7RzWhxfQxo2a7GL8GCNMI.NkUuZ8eAG7K7qG9WhoRP3iAEkwfbTYwUZ7oUHeu8iqd-XU5h9AXRqmWEs5XP5Q7SQxS-EiQy5iXIYuCrIa6kBDs-3eov8ubt",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"scheduled_date\": \"2019-10-06T12:56:55+00:00\"\r\n}"
+				},
+				"url": {
+					"raw": "https://api.surveymonkey.com/v3/surveys/153766833/responses",
+					"protocol": "https",
+					"host": [
+						"api",
+						"surveymonkey",
+						"com"
+					],
+					"path": [
+						"v3",
+						"surveys",
+						"153766833",
+						"responses"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

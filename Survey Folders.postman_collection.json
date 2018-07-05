@@ -1,0 +1,91 @@
+{
+	"info": {
+		"_postman_id": "fb565a31-60ca-4af4-8535-ba32e9e7ebc5",
+		"name": "Survey Folders",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/surveys/s_id/pages/p_id",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "7zF8BOnG4G7RzWhxfQxo2a7GL8GCNMI.NkUuZ8eAG7K7qG9WhoRP3iAEkwfbTYwUZ7oUHeu8iqd-XU5h9AXRqmWEs5XP5Q7SQxS-EiQy5iXIYuCrIa6kBDs-3eov8ubt",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"title\":\"My Team Folder\"}"
+				},
+				"url": {
+					"raw": "https://api.surveymonkey.com/v3/survey_folders",
+					"protocol": "https",
+					"host": [
+						"api",
+						"surveymonkey",
+						"com"
+					],
+					"path": [
+						"v3",
+						"survey_folders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/surveys/s_id/pages/p_id",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "7zF8BOnG4G7RzWhxfQxo2a7GL8GCNMI.NkUuZ8eAG7K7qG9WhoRP3iAEkwfbTYwUZ7oUHeu8iqd-XU5h9AXRqmWEs5XP5Q7SQxS-EiQy5iXIYuCrIa6kBDs-3eov8ubt",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"title\":\"My Team Folder\"}"
+				},
+				"url": {
+					"raw": "https://api.surveymonkey.com/v3/surveys/153766833/languages",
+					"protocol": "https",
+					"host": [
+						"api",
+						"surveymonkey",
+						"com"
+					],
+					"path": [
+						"v3",
+						"surveys",
+						"153766833",
+						"languages"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

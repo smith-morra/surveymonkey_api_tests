@@ -1,0 +1,51 @@
+{
+	"info": {
+		"_postman_id": "51b5f338-af99-4bfa-855a-e961386e25ab",
+		"name": "multi languages",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/surveys/s_id/pages/p_id",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "7zF8BOnG4G7RzWhxfQxo2a7GL8GCNMI.NkUuZ8eAG7K7qG9WhoRP3iAEkwfbTYwUZ7oUHeu8iqd-XU5h9AXRqmWEs5XP5Q7SQxS-EiQy5iXIYuCrIa6kBDs-3eov8ubt",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"title\":\"My Team Folder\"}"
+				},
+				"url": {
+					"raw": "https://api.surveymonkey.com/v3/surveys/153766833/languages",
+					"protocol": "https",
+					"host": [
+						"api",
+						"surveymonkey",
+						"com"
+					],
+					"path": [
+						"v3",
+						"surveys",
+						"153766833",
+						"languages"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

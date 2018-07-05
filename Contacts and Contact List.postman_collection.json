@@ -1,0 +1,383 @@
+{
+	"info": {
+		"_postman_id": "3a6a9917-893d-47e7-be34-1151b76436fd",
+		"name": "Contacts and Contact List",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "contact_lists",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "7zF8BOnG4G7RzWhxfQxo2a7GL8GCNMI.NkUuZ8eAG7K7qG9WhoRP3iAEkwfbTYwUZ7oUHeu8iqd-XU5h9AXRqmWEs5XP5Q7SQxS-EiQy5iXIYuCrIa6kBDs-3eov8ubt",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\": \"My Contact List\"}"
+				},
+				"url": {
+					"raw": "https://api.surveymonkey.com/v3/contact_lists",
+					"protocol": "https",
+					"host": [
+						"api",
+						"surveymonkey",
+						"com"
+					],
+					"path": [
+						"v3",
+						"contact_lists"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "contact_lists/c_id",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "7zF8BOnG4G7RzWhxfQxo2a7GL8GCNMI.NkUuZ8eAG7K7qG9WhoRP3iAEkwfbTYwUZ7oUHeu8iqd-XU5h9AXRqmWEs5XP5Q7SQxS-EiQy5iXIYuCrIa6kBDs-3eov8ubt",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\": \"My Contact List\"}"
+				},
+				"url": {
+					"raw": "https://api.surveymonkey.com/v3/contact_lists/109646175",
+					"protocol": "https",
+					"host": [
+						"api",
+						"surveymonkey",
+						"com"
+					],
+					"path": [
+						"v3",
+						"contact_lists",
+						"109646175"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "contact_lists/c_id/copy",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "7zF8BOnG4G7RzWhxfQxo2a7GL8GCNMI.NkUuZ8eAG7K7qG9WhoRP3iAEkwfbTYwUZ7oUHeu8iqd-XU5h9AXRqmWEs5XP5Q7SQxS-EiQy5iXIYuCrIa6kBDs-3eov8ubt",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://api.surveymonkey.com/v3/contact_lists/109583267/copy",
+					"protocol": "https",
+					"host": [
+						"api",
+						"surveymonkey",
+						"com"
+					],
+					"path": [
+						"v3",
+						"contact_lists",
+						"109583267",
+						"copy"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "contact_lists/c_id/merge",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "7zF8BOnG4G7RzWhxfQxo2a7GL8GCNMI.NkUuZ8eAG7K7qG9WhoRP3iAEkwfbTYwUZ7oUHeu8iqd-XU5h9AXRqmWEs5XP5Q7SQxS-EiQy5iXIYuCrIa6kBDs-3eov8ubt",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"list_id\": \"109583541\" }"
+				},
+				"url": {
+					"raw": "https://api.surveymonkey.com/v3/contact_lists/109646175/merge",
+					"protocol": "https",
+					"host": [
+						"api",
+						"surveymonkey",
+						"com"
+					],
+					"path": [
+						"v3",
+						"contact_lists",
+						"109646175",
+						"merge"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "contact_lists/c_id/contacts",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "7zF8BOnG4G7RzWhxfQxo2a7GL8GCNMI.NkUuZ8eAG7K7qG9WhoRP3iAEkwfbTYwUZ7oUHeu8iqd-XU5h9AXRqmWEs5XP5Q7SQxS-EiQy5iXIYuCrIa6kBDs-3eov8ubt",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"first_name\": \"edc\", \"last_name\": \"cde\", \"email\": \"test1@surveymonkey.com\"}"
+				},
+				"url": {
+					"raw": "https://api.surveymonkey.com/v3/contact_lists/109583267/contacts",
+					"protocol": "https",
+					"host": [
+						"api",
+						"surveymonkey",
+						"com"
+					],
+					"path": [
+						"v3",
+						"contact_lists",
+						"109583267",
+						"contacts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://api.surveymonkey.com/v3/contact_lists/109583267/contacts",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "7zF8BOnG4G7RzWhxfQxo2a7GL8GCNMI.NkUuZ8eAG7K7qG9WhoRP3iAEkwfbTYwUZ7oUHeu8iqd-XU5h9AXRqmWEs5XP5Q7SQxS-EiQy5iXIYuCrIa6kBDs-3eov8ubt",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"first_name\": \"ka\", \"last_name\": \"an\", \"email\": \"te111st1@surveymonkey.com\"}"
+				},
+				"url": {
+					"raw": "https://api.surveymonkey.com/v3/contact_lists/109583267/contacts",
+					"protocol": "https",
+					"host": [
+						"api",
+						"surveymonkey",
+						"com"
+					],
+					"path": [
+						"v3",
+						"contact_lists",
+						"109583267",
+						"contacts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://api.surveymonkey.com/v3/contact_lists/109578000/contacts/bulk",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "7zF8BOnG4G7RzWhxfQxo2a7GL8GCNMI.NkUuZ8eAG7K7qG9WhoRP3iAEkwfbTYwUZ7oUHeu8iqd-XU5h9AXRqmWEs5XP5Q7SQxS-EiQy5iXIYuCrIa6kBDs-3eov8ubt",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"contacts\": [{ \"first_name\": \"Joh1n\", \"last_name\": \"Doe1\", \"email\": \"tes1t@surveymonkey.com\"},{\"first_name\": \"qaws\", \"last_name\": \"edrf\", \"email\": \"tgyht@surveymonkey.com\"},{\"first_name\": \"kaan\", \"last_name\": \"akgun\", \"email\": \"kaan.akgun1@stu.bahcesehir.edu.tr\"}] }"
+				},
+				"url": {
+					"raw": "https://api.surveymonkey.com/v3/contact_lists/109578000/contacts/bulk",
+					"protocol": "https",
+					"host": [
+						"api",
+						"surveymonkey",
+						"com"
+					],
+					"path": [
+						"v3",
+						"contact_lists",
+						"109578000",
+						"contacts",
+						"bulk"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "contact_fields",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "7zF8BOnG4G7RzWhxfQxo2a7GL8GCNMI.NkUuZ8eAG7K7qG9WhoRP3iAEkwfbTYwUZ7oUHeu8iqd-XU5h9AXRqmWEs5XP5Q7SQxS-EiQy5iXIYuCrIa6kBDs-3eov8ubt",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "contacts\": [{ \"first_name\": \"rfv\", \"last_name\": \"tgb\", \"email\": \"test4@surveymonkey.com\"}}]}"
+				},
+				"url": {
+					"raw": "https://api.surveymonkey.com/v3/contact_fields",
+					"protocol": "https",
+					"host": [
+						"api",
+						"surveymonkey",
+						"com"
+					],
+					"path": [
+						"v3",
+						"contact_fields"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://api.surveymonkey.com/v3/contact_lists/109583267/contacts",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "7zF8BOnG4G7RzWhxfQxo2a7GL8GCNMI.NkUuZ8eAG7K7qG9WhoRP3iAEkwfbTYwUZ7oUHeu8iqd-XU5h9AXRqmWEs5XP5Q7SQxS-EiQy5iXIYuCrIa6kBDs-3eov8ubt",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"first_name\": \"kaan\", \"last_name\": \"akgunn\", \"email\": \"kakgun@sigortam.net\"}"
+				},
+				"url": {
+					"raw": "https://api.surveymonkey.com/v3/contacts/2490000595/",
+					"protocol": "https",
+					"host": [
+						"api",
+						"surveymonkey",
+						"com"
+					],
+					"path": [
+						"v3",
+						"contacts",
+						"2490000595",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
