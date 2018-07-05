@@ -1,1 +1,1 @@
-Surveymonkeys api test for survey sender with postman.
+SurveyMonkey API test for survey sender with the postman.
